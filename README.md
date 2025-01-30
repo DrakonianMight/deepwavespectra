@@ -20,11 +20,11 @@ The models provided were trained with years of data at a single location, it is 
 
 ## Repository Structure
 
-* examples: Example scripts demonstrating the usage of the ML models.
+* examples: An example jupyter notebook. Also contains model configuration and wave statistics source code.
 
-* data: Sample datasets for training and testing the models.
+* data: Some example spectral data to use in the examples. Note data sourced from CSIRO, Bureau of Meteorology and Queensland Government.
 
-* models: Pre-trained models and configurations for various scenarios.
+* models: Pre-trained models based on years of data.
 
 ## Getting Started
 
