@@ -1,16 +1,17 @@
 # Deepwavespectra
 
-This repository contains example code and test cases for the machine learning models developed to predict ocean wave conditions using 1D wave spectra. These models are designed to downscale offshore wave conditions to nearshore locations, improving prediction accuracy for significant wave height and other parameters.
+This repository contains example code and test cases for the machine learning models developed to predict ocean wave conditions using 2D wave spectra. These models are designed to upscale and bias correct 2D wave spectra, improving prediction accuracy for significant wave height and other wave parameters.
 
 ## Overview
 
-Machine Learning (ML) has shown significant potential in enhancing wave condition prediction by leveraging 1D wave spectra. This repository includes examples, test cases, and guidelines to:
+The accurate prediction of 2D wave spectra is a challenge for the maritime and coastal engineering sectors. This repository includes examples, test cases, and guidelines to:
+Develop and compare a range of deep learning approaches for upscaling and bias correcting 2D wave spectra.
+Demonstrate the performance of deep learning models against a phase-averaged wave model.
+Highlight performance improvements, including a reduction in root mean squared error (RMSE) of up to 33% for significant wave height.
+Explore improvements in bias correction across the spectrum, particularly for spectral density in frequency bins ranging from 7 to 28 s period.
+While the deep learning approaches showed improved bias correction and reduced RMSE, they also exhibited a tendency to be diffusive (biased towards the mean), suggesting further development of training approaches to reduce diffusion.
 
-Evaluate the impact of feature selection and engineering.
-
-Demonstrate the application of different ML approaches, including Long-Term Short-Term Memory (LSTM).
-
-Highlight performance improvements achieved by using 1D wave spectra compared to integrated parameter-only approaches.
+Full details are in the following paper: 
 
 ## Repository Structure
 
@@ -26,7 +27,7 @@ Highlight performance improvements achieved by using 1D wave spectra compared to
 
 Clone the repository:
 
-git clone https://github.com/your-username/ocean-wave-spectra-ml.git
+git clone https://github.com/DrakonianMight/deepwavespectra.git
 
 Install the required dependencies:
 
@@ -34,36 +35,3 @@ pip install -r requirements.txt
 
 Run the example scripts in the /examples directory to get started.
 
-### Subsections to Populate
-
-1. Feature Selection and Engineering
-
-Provide detailed explanations and examples of how feature selection and engineering impact model performance. Include guidelines for:
-
-Choosing relevant features from the 1D wave spectra.
-
-Encoding and preprocessing methods.
-
-2. Model Architectures
-
-Add descriptions and configurations for the ML models implemented, including:
-
-LSTM-based approaches.
-
-Comparative analysis with other ML architectures.
-
-3. Performance Metrics
-
-Include examples of performance metrics used to evaluate the models, such as:
-
-Root Mean Squared Error (RMSE)
-
-Mean Absolute Error (MAE)
-
-4. Results and Analysis
-
-Present results obtained from different models and configurations. Highlight key findings, such as:
-
-The 27% RMSE reduction achieved using 1D wave spectra.
-
-Sensitivities observed in the input data.
