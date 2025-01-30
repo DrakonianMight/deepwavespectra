@@ -4,6 +4,7 @@ This repository contains example code and test cases for the machine learning mo
 
 ## Overview
 
+### Abstract
 The accurate prediction of 2D wave spectra is a challenge for the maritime and coastal engineering sectors. This repository includes examples, test cases, and guidelines to:
 Develop and compare a range of deep learning approaches for upscaling and bias correcting 2D wave spectra.
 Demonstrate the performance of deep learning models against a phase-averaged wave model.
@@ -13,15 +14,17 @@ While the deep learning approaches showed improved bias correction and reduced R
 
 Full details are in the following paper: 
 
+## Guide for users
+
+The models provided were trained with years of data at a single location, it is strongly advised that new models be trained for other locations.
+
 ## Repository Structure
 
-/examples: Example scripts demonstrating the usage of the ML models.
+* examples: Example scripts demonstrating the usage of the ML models.
 
-/test_cases: Test cases for validating model performance and configuration.
+* data: Sample datasets for training and testing the models.
 
-/data: Sample datasets for training and testing the models.
-
-/models: Pre-trained models and configurations for various scenarios.
+* models: Pre-trained models and configurations for various scenarios.
 
 ## Getting Started
 
@@ -33,5 +36,11 @@ Install the required dependencies:
 
 pip install -r requirements.txt
 
-Run the example scripts in the /examples directory to get started.
+### Requirements
+
+Python
+For running the examples a CPU will be OK, but a GPU is recommended for training your own models.
+CUDA v10 >
+
+Run the example jupyter notebooks in the /examples directory to get started.
 

@@ -3,9 +3,8 @@ Module: model_configurations
 Author: lpeach
 Purpose: To store the model configurations as a module.
 
-This module contains the configurations for the model, including parameters and settings
-that are used throughout the model's lifecycle. It centralizes the configuration management
-to ensure consistency and ease of maintenance.
+This module contains the configurations for the each deep learning model, including parameters and settings
+that are used throughout the model's lifecycle. 
 """
 
 import torch
